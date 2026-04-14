@@ -37,33 +37,39 @@ def average_temp(monitor):
 
 
 def format_readings(monitor):
-    """
-    Retorna una representacion en cadena de las temperaturas.
-    Formato: [t1, t2, t3, ..., tn]
-    """
-    # TODO: Implementar
+    return str(monitor['readings'])
     pass
 
 
 def highest_temp(monitor):
-   return max(monitor['readings'])
+    return max(monitor['readings'])
     pass
 
 
 def coldest_window(monitor, k):
-    """
-    Retorna el promedio mas bajo de cualquier k lecturas consecutivas.
-    """
-    # TODO: Implementar
+    readings = monitor['readings']
+    min_avg = None
+    for i in range(len(readings) - k + 1):
+        window = readings[i:i + k]
+        avg = sum(window) / k
+        if min_avg is None or avg < min_avg:
+            min_avg = avg
+    return min_avg
     pass
 
 
 def longest_rising_streak(monitor):
-    """
-    Retorna la longitud maxima de una secuencia de lecturas consecutivas
-    donde las temperaturas aumentan estrictamente.
-    """
-    # TODO: Implementar
+    readings = monitor['readings']
+    max_streak = 1
+    current_streak = 1
+    for i in range(1, len(readings)):
+        if readings[i] > readings[i - 1]:
+            current_streak += 1
+            if current_streak > max_streak:
+                max_streak = current_streak
+        else:
+            current_streak = 1
+    return max_streak
     pass
 
 
