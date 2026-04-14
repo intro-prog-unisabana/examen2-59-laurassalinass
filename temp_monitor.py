@@ -52,7 +52,7 @@ def coldest_window(monitor, k):
     for i in range(len(readings) - k + 1):
         window = readings[i:i + k]
         avg = sum(window) / k
-        if mina is None or avg < min_avg:
+        if mina is None or avg < mina:
             min_avg = avg
     return mina
     pass
