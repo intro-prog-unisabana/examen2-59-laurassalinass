@@ -46,10 +46,7 @@ def format_readings(monitor):
 
 
 def highest_temp(monitor):
-    """
-    Retorna la temperatura mas alta de cualquier lectura.
-    """
-    # TODO: Implementar
+   return max(monitor['readings'])
     pass
 
 
