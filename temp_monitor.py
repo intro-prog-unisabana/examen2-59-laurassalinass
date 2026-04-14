@@ -8,10 +8,12 @@
 
 
 def init(max_readings):
-    """
-    Crea y retorna un diccionario para almacenar hasta max_readings lecturas.
-    """
-    print(max_readings)
+    monitor = {
+        'max': max_readings,
+        'readings': [],
+        'total': 0.0
+    }
+    return monitor
     pass
 
 
@@ -28,7 +30,7 @@ def count(monitor):
     """
     Retorna el numero de lecturas agregadas.
     """
-    # TODO: Implementar
+    print()
     pass
 
 
