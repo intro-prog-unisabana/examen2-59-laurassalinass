@@ -14,8 +14,8 @@ def main():
     
     monitor = temp_monitor.init(n)
     
-    for i in range(r):
-    tempe = float(archivo.readline())
+    for i in range(n):
+    temp = float(archivo.readline())
     monitor = temp_monitor.add_reading(monitor, temp)
     
     # TODO: Imprimir la racha creciente mas larga
