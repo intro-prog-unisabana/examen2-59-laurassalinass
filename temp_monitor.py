@@ -18,11 +18,11 @@ def init(max_readings):
 
 
 def add_reading(monitor, temp):
-    """
-    Agrega una nueva lectura con la temperatura especificada.
-    Retorna el diccionario modificado.
-    """
-    print(monitor+temp)
+    
+    monitor['readings'].append(temp)
+    monitor['total'] += temp
+    return monitor
+
     pass
 
 
