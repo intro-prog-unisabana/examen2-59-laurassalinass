@@ -48,7 +48,7 @@ def highest_temp(monitor):
 
 def coldest_window(monitor, k):
     readings = monitor['readings']
-    min_avg = None
+    mina = None
     for i in range(len(readings) - k + 1):
         window = readings[i:i + k]
         avg = sum(window) / k
