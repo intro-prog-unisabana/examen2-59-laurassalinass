@@ -19,7 +19,7 @@ def main():
         monitor = temp_monitor.add_reading(monitor, temp)
     
     archivo.close()
-    print(temp_monitor.longest_rising_streak(monitor)))
+    print(temp_monitor.longest_rising_streak(monitor))
     
     pass
 
