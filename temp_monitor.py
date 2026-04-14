@@ -54,7 +54,7 @@ def coldest_window(monitor, k):
         avg = sum(window) / k
         if min_avg is None or avg < min_avg:
             min_avg = avg
-    return min_avg
+    return min_avgb
     pass
 
 
