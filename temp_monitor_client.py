@@ -9,7 +9,9 @@ def main():
    
     namearchivo = input("Nombre del archivo: ")
     
-    # TODO: Abrir el archivo y leer el numero de lecturas n
+    archivo = open(namearchivo, 'n')
+    n = int(archivo.readline())
+    monitor = temp_monitor.init(n)
     
     # TODO: Crear el monitor usando temp_monitor.init(n)
     
