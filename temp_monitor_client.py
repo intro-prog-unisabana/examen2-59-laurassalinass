@@ -11,9 +11,8 @@ def main():
     
     archivo = open(namearchivo, 'n')
     n = int(archivo.readline())
-    monitor = temp_monitor.init(n)
     
-    # TODO: Crear el monitor usando temp_monitor.init(n)
+    monitor = temp_monitor.init(n)
     
     # TODO: Leer las n temperaturas y agregarlas con temp_monitor.add_reading()
     
