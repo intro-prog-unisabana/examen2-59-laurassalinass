@@ -18,8 +18,8 @@ def main():
         temp = float(archivo.readline())
         monitor = temp_monitor.add_reading(monitor, temp)
     
-    # TODO: Imprimir la racha creciente mas larga
-    #       usando temp_monitor.longest_rising_streak()
+    archivo.close()
+    print()
     
     pass
 
