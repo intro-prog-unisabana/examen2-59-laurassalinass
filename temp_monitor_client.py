@@ -14,7 +14,9 @@ def main():
     
     monitor = temp_monitor.init(n)
     
-    # TODO: Leer las n temperaturas y agregarlas con temp_monitor.add_reading()
+    for i in range(r):
+    tempe = float(archivo.readline())
+    monitor = temp_monitor.add_reading(monitor, temp)
     
     # TODO: Imprimir la racha creciente mas larga
     #       usando temp_monitor.longest_rising_streak()
