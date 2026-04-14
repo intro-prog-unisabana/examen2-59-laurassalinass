@@ -26,17 +26,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
-
-
-
-
-archivo.close()
-
-print(temp_monitor.longest_rising_streak(monitor))
