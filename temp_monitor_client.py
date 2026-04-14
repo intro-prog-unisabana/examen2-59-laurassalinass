@@ -9,7 +9,7 @@ def main():
    
     namearchivo = input("Nombre del archivo: ")
     
-    archivo = open(namearchivo, 'n')
+    archivo = open(namearchivo, 'r')
     n = int(archivo.readline())
     
     monitor = temp_monitor.init(n)
