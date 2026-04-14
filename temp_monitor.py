@@ -11,7 +11,7 @@ def init(max_readings):
     """
     Crea y retorna un diccionario para almacenar hasta max_readings lecturas.
     """
-    # TODO: Implementar
+    print(max_readings)
     pass
 
 
